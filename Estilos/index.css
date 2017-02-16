@@ -1,0 +1,41 @@
+section{
+  width: 900px;
+}
+
+.principal{
+  margin-top: 12%;
+  background-color: #82c3a6;
+  padding: 15px 15px 15px 15px;
+}
+
+.secundarias{
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;;
+}
+
+.paisaje{
+  width: 50%;
+
+}
+
+.retratos{
+  width: 50%;
+
+}
+
+/* Seccion de media queries*/
+@media(max-width:1024px){
+  article{
+    width: 100%;
+    margin-top: 30%;
+  }
+
+}
+
+@media(min-width:1025px){
+  article{
+    width: 900px;
+  }
+
+}

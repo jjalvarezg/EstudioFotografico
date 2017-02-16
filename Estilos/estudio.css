@@ -1,13 +1,11 @@
 body{
   background-color: #02010a;
-}
-
-a{
-    text-decoration: none;
+  margin: 0% 0% 0% 20%;
 }
 
 header{
-  padding: 15px 15px 15px 15px;
+  width: 900px;
+  padding: 15px 0px 0px 15px;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   color: white;
@@ -47,6 +45,8 @@ header li{
 }
 
 footer{
+  width: 900px;
+  padding: 15px 0px 0px 15px;
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   position: fixed;
@@ -54,29 +54,54 @@ footer{
 
 }
 
+figcaption{
+  color: white;
+  font-family: 'Dancing Script';
+}
+
 /* Seccion de media queries*/
-@media(max-width:424px){
-  nav{
-    padding: 1%;
-    float:left;
+@media(max-width:1024px){
+  body{
+    margin: 0% 0% 0% 2%;
+  }
+
+  header{
+    width: 96%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 2%;
+  }
+
+  header h1{
+    width: 100%;
+    margin-left: 5%;
+    font-size: 25px;
+    text-align: center;
   }
 
   header li{
-    margin: 0px 5px;
+    float:left;
+    margin: 0px 8px;
+  }
+
+  header ul{
+    font-size: 25px;
+  }
+
+  footer{
+    width: 96%;
+    padding: 0px 0px 0px 0px;
+    margin-bottom:2%;
 
   }
 }
 
-@media(max-width:321px){
-  header h1{
-    font-size: 25px
+@media(min-width:1025px){
+  header{
+    width: 900px;
   }
 
-  header ul{
-    font-size: 20px
-  }
+  footer{
+    width: 900px;
 
-  header li{
-    margin: 0px 5px;
   }
 }
