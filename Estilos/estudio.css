@@ -1,107 +1,138 @@
+*{
+	margin:0;
+}
+
 body{
   background-color: #02010a;
-  margin: 0% 0% 0% 20%;
 }
 
 header{
-  width: 900px;
-  padding: 15px 0px 0px 15px;
+  color: white;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
-  color: white;
   text-shadow: 2px 2px #02010a;
   font-family: 'Dancing Script';
   position: fixed;
-  top: 0;
-
+  top:0;
 }
 
 header a{
   color: white;
   text-shadow: 2px 2px #02010a;
-
 }
 
 header h1{
   display: inline;
+  margin-left: 2%;
 }
 
 nav{
   float: right;
   display: inline;
+  margin-bottom: 2%;
 }
 
 header ul{
   list-style-type: none;
   font-size: 25px;
   display: inline;
-
 }
 
 header li{
   margin: 0px 25px;
   display: inline;
-
 }
 
-footer{
+/*footer{
+  margin-top: 5%;
   width: 900px;
-  padding: 15px 0px 0px 15px;
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   position: fixed;
   bottom: 0;
 
 }
-
+*/
 figcaption{
   color: white;
   font-family: 'Dancing Script';
 }
 
 /* Seccion de media queries*/
-@media(max-width:1024px){
-  body{
-    margin: 0% 0% 0% 2%;
+@media(min-width:1024px){
+	header{
+    width: 900px;
   }
 
-  header{
-    width: 96%;
-    padding: 0px 0px 0px 0px;
-    margin-top: 2%;
-  }
+	.contenedor{
+		width: 900px;
+		margin: 0 auto;
+		margin-top: 46px;
+	}
+}
 
-  header h1{
+@media(min-width:768px) and (max-width:1023px){
+	header{
     width: 100%;
-    margin-left: 5%;
-    font-size: 25px;
+  }
+
+	header h1{
+    width: 100%;
     text-align: center;
   }
 
-  header li{
-    float:left;
-    margin: 0px 8px;
+	header li{
+    margin: 0px 18px;
   }
 
-  header ul{
-    font-size: 25px;
-  }
-
-  footer{
-    width: 96%;
-    padding: 0px 0px 0px 0px;
-    margin-bottom:2%;
-
-  }
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 6%;
+	}
 }
 
-@media(min-width:1025px){
-  header{
-    width: 900px;
+
+@media(min-width:425px) and (max-width:767px){
+	header{
+    width: 100%;
   }
 
-  footer{
-    width: 900px;
-
+	header h1{
+    width: 100%;
+    text-align: center;
   }
+
+	header li{
+    margin: 0px 18px;
+  }
+
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 18%;
+	}
+}
+
+@media (max-width:424px){
+	header{
+    width: 100%;
+  }
+
+	header h1{
+    width: 100%;
+    text-align: center;
+		font-size: 25px;
+  }
+
+	header li{
+    margin: 0px 8px;
+		float: left;
+  }
+
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 19%;
+	}
 }
