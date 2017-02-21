@@ -36,10 +36,10 @@ nav{
   margin-bottom: 2%;
 }
 
-header ul{
+ul{
   list-style-type: none;
   font-size: 25px;
-  display: inline;
+
 }
 
 header li{
@@ -48,8 +48,11 @@ header li{
 }
 
 footer{
+	font-family: 'Dancing Script';
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
+	display: inline;
+	float: right;
 }
 
 figcaption{
@@ -60,6 +63,11 @@ figcaption{
 	text-decoration: underline;
 }
 
+.contenidoFooter{
+	display: flex;
+	flex-direction: row;
+}
+
 /* Seccion de media queries*/
 @media(min-width:1024px){
 	header{
@@ -68,13 +76,31 @@ figcaption{
 
 	footer{
 	  width: 900px;
-		margin-top: 1%;
+		margin-top: 0%;
 	}
 
 	.contenedor{
 		width: 900px;
 		margin: 0 auto;
 		margin-top: 46px;
+	}
+
+	.contacto{
+		width: 22%;
+		margin-left: 3%;
+	}
+
+	.terminos{
+		width: 22%;
+	}
+
+	.social{
+		width: 30%;
+		margin-left: 5%;
+	}
+
+	.derechos{
+		width: 22%;
 	}
 }
 
@@ -102,6 +128,26 @@ figcaption{
 		margin: 0 auto;
 		margin-top: 6%;
 	}
+
+	.contacto{
+		width: 22%;
+		margin-left: 3%;
+	}
+
+	.terminos{
+		width: 22%;
+		margin-left: 5%;
+	}
+
+	.social{
+		width: 30%;
+		margin-left: 5%;
+	}
+
+	.derechos{
+		width: 22%;
+	}
+
 }
 
 @media(min-width:425px) and (max-width:767px){
@@ -128,6 +174,36 @@ figcaption{
 		margin: 0 auto;
 		margin-top: 18%;
 	}
+
+	.contenidoFooter{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contacto{
+		width: 100%;
+		order: 1;
+		margin-bottom: 7%;
+	}
+
+	.terminos{
+		width: 100%;
+		order: 2;
+		margin-bottom: 7%;
+	}
+
+	.social{
+		width: 100%;
+		order: 3;
+		margin-bottom: 7%;
+	}
+
+	.derechos{
+		width: 100%;
+		order: 4;
+		margin-bottom: 7%;
+	}
+
 }
 
 @media (min-width:375px) and (max-width:424px){
@@ -147,7 +223,7 @@ figcaption{
   }
 
 	footer{
-	  width: 95%;
+	  width: 100%;
 		margin-top: 1%;
 	}
 
@@ -156,10 +232,38 @@ figcaption{
 		margin: 0 auto;
 		margin-top: 19%;
 	}
+
+	.contenidoFooter{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contacto{
+		width: 100%;
+		order: 1;
+		margin-bottom: 7%;
+	}
+
+	.terminos{
+		width: 100%;
+		order: 2;
+		margin-bottom: 7%;
+	}
+
+	.social{
+		width: 100%;
+		order: 3;
+		margin-bottom: 7%;
+	}
+
+	.derechos{
+		width: 100%;
+		order: 4;
+		margin-bottom: 7%;
+	}
 }
 
-
-@media (min-width:320px) and (max-width:374px){
+@media (min-width:100px) and (max-width:374px){
 	header{
     width: 95%;
   }
@@ -184,5 +288,34 @@ figcaption{
 		width: 95%;
 		margin: 0 auto;
 		margin-top: 22%;
+	}
+
+	.contenidoFooter{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contacto{
+		width: 100%;
+		order: 1;
+		margin-bottom: 7%;
+	}
+
+	.terminos{
+		width: 100%;
+		order: 2;
+		margin-bottom: 7%;
+	}
+
+	.social{
+		width: 100%;
+		order: 3;
+		margin-bottom: 7%;
+	}
+
+	.derechos{
+		width: 100%;
+		order: 4;
+		margin-bottom: 7%;
 	}
 }
