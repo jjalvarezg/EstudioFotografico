@@ -6,8 +6,8 @@ body{
   background-color: #02010a;
 }
 
-a{
-	border-color: black;
+footer a{
+	text-decoration: none;
 }
 
 header{
@@ -47,6 +47,14 @@ header li{
   display: inline;
 }
 
+figcaption{
+  color: white;
+  font-family: 'Dancing Script';
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+
 footer{
 	font-family: 'Dancing Script';
   background-color: #C6d5c5;
@@ -55,12 +63,15 @@ footer{
 	float: right;
 }
 
-figcaption{
-  color: white;
-  font-family: 'Dancing Script';
-	font-size: 30px;
-	text-align: center;
-	text-decoration: underline;
+footer figcaption{
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	display: inline;
+}
+
+footer img{
+	width: 6%;
 }
 
 .contenidoFooter{

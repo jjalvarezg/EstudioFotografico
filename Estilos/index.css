@@ -12,6 +12,7 @@
 
 .secundarias img{
   border-style: solid;
+  border-color: black;
 }
 
 .secundarias img:hover{
@@ -42,7 +43,7 @@
   }
 
   .secundarias figure{
-    width: 50%;
+    width: 60%;
     margin-left: 3%;
   }
 
